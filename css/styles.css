@@ -1,3 +1,9 @@
+/*
+*
+* Basic HTML elements
+*
+*/
+
 body {
 	margin-top: 90px;
 	margin-bottom: 55px;
@@ -8,9 +14,12 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
 html {
 	height: 100%;
 }
+
+/* Text */
 
 h1 {
 	font-weight: bold;
@@ -38,9 +47,19 @@ p {
 	color: #030303;
 }
 
-#welcome-text {
-	font-size: 1.3em;
+/* Lists */
+
+
+ul {
+	list-style: none;
+	margin-bottom: 30px;
 }
+
+ul li {
+	color: #ecf0f1;
+}
+
+/* Links */
 
 a small {
 	color: #0b2bd4;
@@ -50,6 +69,14 @@ a:hover small {
 	font-weight: bold;
 }
 
+/*
+*
+* CSS Classes
+*
+*/
+
+/* Links */
+
 a.bold-hover {
 	color: #0b2bd4;
 }
@@ -57,6 +84,89 @@ a.bold-hover {
 a.bold-hover:hover {
 	font-weight: bold;
 }
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+	background-color: #ad1007;
+}
+
+.link-description {
+	text-align: center;
+}
+
+.link-description a {
+	color: #030303;
+}
+
+.active-tab {
+	background-color: #ad1007;
+}
+
+/* Images/Logos */
+
+.brand-logo {
+	font-family: 'Lato', sans-serif;
+	color: #ecf0f1;
+	font-weight: bold;
+}
+
+.front-page-images {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: block;
+	height: 130px;
+}
+
+.logos {
+	width: 130px;
+}
+
+/* General Formatting */
+
+.rule-spacing {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-color: #030303;
+}
+
+.section-spacing {
+	margin-bottom: 30px;
+}
+
+.centered-text {
+	text-align: center;
+}
+
+/* Footer Menu */
+
+.footer {
+	height: 50px;
+	bottom: 0px;
+	position: fixed;
+	background-color: #030303;
+	width: 103%;
+	color: #030303;
+	border-top: solid 2px;
+}
+
+.footer p {
+	color: #ecf0f1;
+	padding-top: 10px;
+	margin-left: 15px;
+}
+
+/*
+*
+* CSS IDs
+*
+*/
+
+#welcome-text {
+	font-size: 1.3em;
+}
+
+/* Header & Associated Links/Buttons */
 
 #header-emblem {
 	height: 30px;
@@ -85,12 +195,6 @@ a#brand-link:hover {
 	color: #ecf0f1;
 }
 
-.navbar-inverse .navbar-nav>.open>a,
-.navbar-inverse .navbar-nav>.open>a:focus,
-.navbar-inverse .navbar-nav>.open>a:hover {
-	background-color: #ad1007;
-}
-
 #toggle-btn {
 	color: #030303;
 	border-color: white;
@@ -105,63 +209,16 @@ a#brand-link:hover {
 	background-color: #ad1007;
 }
 
-.active-tab {
-	background-color: #ad1007;
-}
-
-.brand-logo {
-	font-family: 'Lato', sans-serif;
-	color: #ecf0f1;
-	font-weight: bold;
-}
-
-.front-page-images {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	display: block;
-	height: 130px;
-}
-
-.logos {
-	width: 130px;
-}
-
-.link-description {
-	text-align: center;
-}
-
-.link-description a {
-	color: #030303;
-}
-
-ul {
-	list-style: none;
-	margin-bottom: 30px;
-}
-
-ul li {
-	color: #ecf0f1;
-}
-
-.rule-spacing {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	border-color: #030303;
-}
-
-.section-spacing {
-	margin-bottom: 30px;
-}
-
-.centered-text {
-	text-align: center;
-}
+/* Location Page */
 
 #map {
     width: 500px;
     height: 400px;
-	background-color: #CCC;
+	background-color: #CCC;	
+	margin: auto;
 }
+
+/* Benefits Page */
 
 small#benefits-bottom {
 	font-size: 0.75em;
@@ -175,24 +232,4 @@ small#benefits-bottom {
 #benefits-bottom  a:hover {
 	color: #0b2bd4;
 	font-weight: bold;
-}
-
-#map{
-	margin: auto;
-}
-
-.footer {
-	height: 50px;
-	bottom: 0px;
-	position: fixed;
-	background-color: #030303;
-	width: 103%;
-	color: #030303;
-	border-top: solid 2px;
-}
-
-.footer p {
-	color: #ecf0f1;
-	padding-top: 10px;
-	margin-left: 15px;
 }
